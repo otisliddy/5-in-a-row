@@ -3,6 +3,8 @@ A variation of the famous Connect Four game, intended to be played in 2 client w
 
 ## Prerequisites
 - Java 11
+- Maven
+- Google Chrome
 
 ## How to play
 1. Start the application by one of the following methods. 
