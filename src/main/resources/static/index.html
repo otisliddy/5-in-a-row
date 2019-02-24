@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>5 in a Row</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/app.js"></script>
+</head>
+
+<body>
+    <div id='div-enter-name' class="col-md-6">
+        <form class="form-inline">
+            <div class="form-group">
+                <label for="name">Enter your name:</label>
+                <input type="text" id="txt-name" class="form-control">
+            </div>
+            <button id="btn-start" class="btn btn-default" type="submit" disabled="true">Start Game</button>
+        </form>
+    </div>
+    <div id="div-game" hidden=true>
+        <div id="div-game-grid"></div>
+        <div id="cmd-prompt">
+            <label id="lbl-cmd-prompt"></label>
+            <input id="txt-player-move" type="text" class="form-control" width="25">
+            <button id="btn-player-move" class="btn btn-default" type="submit" disabled="true">Move</button>
+        </div>
+    </div>
+</body>
+
+</html>
